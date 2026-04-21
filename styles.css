@@ -1,0 +1,383 @@
+Styles · CSS
+Copy
+
+/* Lab 3 - Team Andrew Meeting Minutes
+   Andrew Pham */
+ /*import font from google */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap');
+ 
+/* color variables so I don't have to keep copy pasting hex codes */
+:root {
+  --primary-color: #0f172a;
+  --accent-color: #6366f1;
+  --accent-light: #e0e7ff;
+  --bg-color: #f8fafc;
+  --section-bg: #ffffff;
+  --text-color: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --footer-bg: #0f172a;
+  --footer-text: #f1f5f9;
+  --hover-color: #4f46e5;
+  --font-heading: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+}
+ 
+/* reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  background-color: var(--bg-color, #f8fafc);
+  font-family: var(--font-body, sans-serif);
+  color: var(--text-color, black);
+  font-size: 1rem;
+  line-height: 1.7em;
+  padding: 0 5%;
+}
+ 
+h1, h2, h3 {
+  font-family: var(--font-heading, serif);
+}
+ 
+h1 {
+  font-size: 2.2rem;
+  color: var(--footer-text, white);
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+ 
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-color, #0f172a);
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+ 
+h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-color, #6366f1);
+  margin-bottom: 8pt;
+}
+ 
+p {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: var(--text-muted, #64748b);
+  max-width: 800px;
+  min-width: 200px;
+}
+ 
+a {
+  color: var(--accent-color, #6366f1);
+  text-decoration: none;
+}
+ 
+a:hover {
+  color: var(--hover-color, #4f46e5);
+  text-decoration: underline;
+}
+ 
+a:active {
+  color: hsl(244, 76%, 40%);
+}
+ 
+ul, ol {
+  padding: 0 0 0 1.5rem;
+  margin: 8px 0 8px 0;
+}
+ 
+li {
+  margin-bottom: 6px;
+}
+ 
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color, #e2e8f0);
+  margin: 0.5cm 0;
+}
+ 
+/* ---- header ---- */
+ 
+header {
+  background-color: var(--primary-color, #0f172a);
+  padding: 20px 40px;
+  border-style: none;
+  border-color: var(--accent-color, #6366f1);
+  border-width: 0 0 3px 0;
+  border-radius: 0;
+  height: auto;
+  min-height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 8mm;
+}
+ 
+/* nav uses flexbox so links wrap nicely on smaller screens */
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+}
+ 
+nav a {
+  display: inline-block;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  letter-spacing: 0.3px;
+}
+ 
+nav a:hover {
+  color: white;
+  background-color: var(--accent-color, #6366f1);
+  text-decoration: none;
+}
+ 
+/* ---- main content ---- */
+ 
+main {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  max-width: 900px;
+  min-width: 280px;
+}
+ 
+section {
+  background-color: var(--section-bg, #ffffff);
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border-color, #e2e8f0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+ 
+section:hover {
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+ 
+/* overview uses rgb() for background and position relative
+   so i can absolutely position things inside later if needed */
+#overview {
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: var(--border-color, #e2e8f0);
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+  margin: 1rem 0;
+  position: relative;
+}
+ 
+#misc {
+  border-left: 4px solid hsl(244, 76%, 60%);
+}
+ 
+#feedback {
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+  margin: 1rem 0;
+}
+ 
+/* needed for the lab - wider gamut colors */
+.wide-gamut-accent {
+  color: color(display-p3 0.38 0.4 0.95);
+  background-color: color-mix(in srgb, #6366f1 20%, white 80%);
+}
+ 
+/* used on highlighted text in new business */
+.highlight {
+  background-color: color-mix(in srgb, #6366f1 12%, white 88%);
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+ 
+/* inline badge for roles/labels */
+.tag {
+  display: inline;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background-color: var(--accent-light, #e0e7ff);
+  color: var(--accent-color, #6366f1);
+  border-radius: 999px;
+  padding: 2px 10px;
+}
+ 
+.hidden {
+  display: none;
+}
+ 
+.content-block {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 240px;
+}
+ 
+/* ---- attendance ---- */
+ 
+#attendance ul {
+  list-style-type: disc;
+}
+ 
+/* descendant combinator */
+#attendance li em {
+  color: #888888;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+ 
+/* ---- agenda ---- */
+ 
+#agenda ol {
+  list-style-type: decimal;
+}
+ 
+/* child combinator */
+#agenda > p {
+  font-style: italic;
+  color: #666;
+}
+ 
+/* ---- old business ---- */
+ 
+details {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  background-color: #fafafa;
+}
+ 
+summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+}
+ 
+summary:hover {
+  color: var(--accent-color);
+}
+ 
+/* ---- new business ---- */
+ 
+/* adjacent sibling combinator */
+#new-business h3 + div {
+  margin-top: 0.5rem;
+}
+ 
+/* general sibling combinator */
+#new-business ol ~ p {
+  font-style: italic;
+  color: #888;
+}
+ 
+/* nested selectors */
+#new-business {
+  & ol {
+    padding-left: 1.25rem;
+  }
+  & li {
+    margin-bottom: 0.5rem;
+  }
+  & strong {
+    color: var(--primary-color);
+  }
+}
+ 
+/* combining element + class */
+strong.highlight {
+  color: var(--accent-color, #6366f1);
+  font-weight: 600;
+}
+ 
+/* ---- media section ---- */
+ 
+/* selector list */
+#media h3, #diagram h2 {
+  margin-top: 1rem;
+}
+ 
+#media audio,
+#media video {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  margin: 0.5rem 0 1rem;
+  border-radius: 6px;
+}
+ 
+#diagram img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  margin-top: 0.75rem;
+}
+ 
+/* :has() - style section differently if it contains audio */
+section:has(audio) {
+  border-left: 4px solid var(--accent-color, #6366f1);
+}
+ 
+/* ---- feedback form ---- */
+ 
+/* grid layout for the form fieldsets */
+#feedback form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  grid-auto-rows: auto;
+}
+ 
+fieldset {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  background-color: #ffffff;
+}
+ 
+/* :has() - highlight fieldsets that have a text input */
+fieldset:has(input[type="text"]) {
+  background-color: #f8f8ff;
+}
+ 
+legend {
+  padding: 0 0.5rem;
+  color: var(--primary-color);
+}
+ 
+label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
