@@ -1,56 +1,53 @@
-# Standup Notes
- 
+# Team Andrew - Standup Notes
+
+**Date:** April 21, 2026
+**Time:** 3:00 PM
+**Type:** Weekly Standup
+
 ---
- 
-## Date and Time
- 
-April 21, 3:00pm meeting
- 
+
+## Who's Here
+
+- Andrew Pham
+- Celine Nguyen
+- Fetty Wap
+- Aubrey Graham
+
 ---
- 
-## Participants
- 
-Andrew Pham
-Celine Nguyen 
-Fetty Wap
-Aubrey Graham
- 
+
+## Quick Check-in
+
+Go around the room and answer: *What's one thing you got done since last time?*
+
+Reference any previous notes or sprint board links here before starting.
+
 ---
- 
-## Meeting Type
- 
-e.g., Weekly Standup Meeting
- 
+
+## Status Update
+
+| Name | What I worked on | What's next | Any blockers? |
+|---|---|---|---|
+| Andrew Pham | Finished Warm Up Activity 1| Review the repo for activity 2|Difficulty with scheduling |
+| Celine Nguyen |Nothing |Do background research | Time Constraints|
+| Fetty Wap | Finished half of research|Push it to Github | First time using GitHub|
+| Aubrey Graham | Read notes to catch up|Do research | Out of town for a week|
+
 ---
- 
-## Materials
- 
-Add any reference materials, previous standup notes, finished task, sprint board links
- 
-Start with a check-in question and discuss any issues that came up from last weeks work, any blockers 
- 
----
- 
-## Goals and Progress
- 
-| Participants | Progress since we last met | Goals until we meet again |
+
+## Topics to Discuss
+
+| Topic | Notes | Outcome |
 |---|---|---|
-| Mention the first participant | e.g., What did you work on since last standup? | e.g., What are you working on next? |
-| Mention the second participant | e.g., Has anything slowed down your work? | e.g., What do you plan to finish by next standup? |
- 
+|Activity 2 | Half of their people did their part|Work In Progress |
+
 ---
- 
-## Important Topics
- 
-| Topic | Description | Results |
-|---|---|---|
-| State the topic | Describe the topic and how it impacts the sprint| Note the results and decisions made during the meeting |
- 
+
+## To-Do
+
+- [ ] Review everyone's work on the GitHub repo — Andrew Pham
+- [ ] Do background research — Fetty Wap
+- [ ] 
+
 ---
- 
-## Action Items
- 
-Add action items created during the standup and check off boxes as you make progress
- 
-- [ ] (Reveiew everyone's work on the github repo, Andrew Pham)
-- [ ] (Do background research, Fetty Wap)
+
+*Next standup:*
